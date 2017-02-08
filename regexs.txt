@@ -1,4 +1,4 @@
 Replace
-(["|'])(#imgTag\(\$[!]?)([.a-zA-Z]+)(\.getLinkByTitle\(')([.a-zA-Z]+)('\)\.href\))(["|'])
+("|')(#imgTag\(\$!?{?)([.\-0-9a-zA-Z]+)(\.getLinkByTitle\(')([.\-0-9a-zA-Z]+)('\)\.href}?\))("|')
 $1#imgUrl(\$$3 '$5')$7
 
