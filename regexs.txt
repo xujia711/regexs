@@ -1,4 +1,4 @@
 Replace
 ("#imgTag\(\$[!]?)([.a-zA-Z]+)(\.getLinkByTitle\(')([.a-zA-Z]+)('\)\.href\)")
-"#imgUrl(\$$2 ‘$4')"
+"#imgUrl(\$$2 '$4')"
 
