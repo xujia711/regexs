@@ -1,6 +1,7 @@
 Replace
 ("|')(#imgTag\(\$[!]?[{]?)([.\-_a-zA-Z0-9]+)(\.getLinkByTitle\(')([.\-_a-zA-Z0-9]+)('\)(\.href(\.path)?)?[}]?\))("|')
 $1#imgUrl(\$$3 '$5')$1
+$1\$!_domainPropertyUtil.getLinkByTitle(\$$3 '$5')$1
 
 (")?(\$[!]?)+([.\-_a-zA-Z0-9]+)(\.getLinkByTitle\(')+([.\-_a-zA-Z0-9]+)('\))(\.href)?(\.path)?(")?
 "#getLink(\$$3 '$5')"
