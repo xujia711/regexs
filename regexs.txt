@@ -4,3 +4,6 @@ $1#imgUrl(\$$3 '$5')$1
 
 (")?(\$[!]?)+([.a-zA-Z]+)(\.getLinkByTitle\(')+([.\-0-9a-zA-Z]+)('\))(\.href)?(\.path)?(")?
 "#getLink(\$$3 '$5')"
+
+(\$[!]?)([.\-a-zA-Z]+)(\.getProperty\(\")([.\-a-zA-Z]+)(\"\))
+$!_domainPropertyUtil.getProperty(\$$2,'$4')
