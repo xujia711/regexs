@@ -6,5 +6,8 @@ $1#imgTag(\$!_domainPropertyUtil.getLinkByTitle(\$$3, '$5').href.path)$1
 (")?(\$[!]?)+([.\-_a-zA-Z0-9]+)(\.getLinkByTitle\(')+([.\-_a-zA-Z0-9]+)('\))(\.href)?(\.path)?(")?
 "#getLink(\$$3 '$5')"
 
+(\$[!]?)+([.\-_a-zA-Z0-9]+)(\.getLinkByTitle\(["|'])+([.\-_a-zA-Z0-9]+)(['|"]\))
+\$!_domainPropertyUtil.getLinkByTitle(\$!$2,'$4')
+
 (\$[!]?)([.\-_a-zA-Z0-9]+)(\.getProperty\(["|'])([.\-_a-zA-Z0-9]+)(["|']\))
 $!_domainPropertyUtil.getProperty(\$$2,'$4')
